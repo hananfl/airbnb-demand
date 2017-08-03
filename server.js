@@ -11,8 +11,6 @@ app.use(express.static('public'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
-// app.set('services', path.join(__dirname, 'services'));
-// app.set('utils', path.join(__dirname, 'utils'));
 
 app.use('/', index);
 app.use('/listings', listings);
