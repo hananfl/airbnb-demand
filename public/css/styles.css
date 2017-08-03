@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.search-bar {
+    text-align: center;
+    border: 1px solid #bbb;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+select {
+    margin-right: 20px;
+    width: 200px;
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 500;
+    color: #676767;
+    border: 1px solid #1892ff;
+    background: transparent;
+    height: 28px;
+}
+.search-button {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 20px;
+    text-align: center;
+    background: #1892ff;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.search-button:hover {
+    background: #0054ff;
+}
+#map {
+    height: 450px;
+    width: 100%;
+    top: 100px;
+    display: none;
+}

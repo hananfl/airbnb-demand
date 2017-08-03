@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Airbnb Demand Heat Map</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdM9C0kajG3z1L_LDd2hW1ON5hHmhvxQI&libraries=visualization&callback=initMap">
+        </script>
+    </head>
+    <body>
+        <h1>Airbnb Demand Heat Map</h1>
+        <div class="search-bar">
+            <select class="location-select">
+                <option value="0">Please select a city</option>
+                <option value="1">New York</option>
+                <option value="2">Miami</option>
+                <option value="3">London</option>
+            </select>
+            <select class="month-select">
+                <option value="2016-08-01">08/2016</option>
+                <option value="2016-09-01">09/2016</option>
+                <option value="2016-10-01">10/2016</option>
+                <option value="2016-11-01">11/2016</option>
+                <option value="2016-12-01">12/2016</option>
+                <option value="2017-01-01">01/2017</option>
+                <option value="2017-02-01">02/2017</option>
+                <option value="2017-03-01">03/2017</option>
+                <option value="2017-04-01">04/2017</option>
+                <option value="2017-05-01">05/2017</option>
+                <option value="2017-06-01">06/2017</option>
+                <option value="2017-07-01" selected>07/2017</option>
+            </select>
+            <div class="search-button" onclick="receiveListings()">Show Demand Map</div>
+        </div>
+        <div id="map"></div>
+    </body>
+</html>
